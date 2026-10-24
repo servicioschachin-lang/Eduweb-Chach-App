@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aurora University | Educación superior</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={corePlugins:{preflight:false}}</script>
+<style>
+:root{--bg:#0a0f24;--bg2:#1b1f4b;--fg:#f4f6ff;--muted:rgba(244,246,255,.78);--acc:#7c3aed;--acc2:#06b6d4;--acc3:#ec4899;--r:28px;--hfont:"Sora",sans-serif;--bfont:"DM Sans",sans-serif}
+
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:var(--bfont);background:var(--bg);color:var(--fg);overflow-x:hidden;line-height:1.65}
+h1,h2,h3,h4,h5,.brand{font-family:var(--hfont);color:inherit;line-height:1.12;margin:0}
+a{text-decoration:none;color:inherit}p{color:var(--muted);margin:0 0 1rem}
+img{max-width:100%;display:block}
+.sec{padding:84px 0}.sec-sm{padding:40px 0}
+.h-hero{font-size:clamp(2.3rem,5.6vw,4.3rem);margin:1rem 0 1.2rem}
+.h-sec{font-size:clamp(1.8rem,3.6vw,2.8rem);margin:.5rem 0 1rem}
+.eyebrow{font-size:.9rem;font-weight:700;color:var(--acc)}
+.lead-x{font-size:1.15rem;max-width:56ch}
+.hero-bg,.band{background-size:cover;background-position:center;background-color:var(--bg2,#222)}
+.band{background-attachment:fixed;padding:110px 0}
+.on-img,.on-img p,.on-img h1,.on-img h2,.on-img .eyebrow{color:#fff}
+.on-img p{opacity:.92}
+.toggler{border:0;font-size:2rem;line-height:1;background:transparent;color:var(--fg);padding:.1rem .5rem}
+.nav-x{--bs-navbar-color:var(--fg);--bs-navbar-brand-color:var(--fg);--bs-navbar-brand-hover-color:var(--fg)}
+.brand{font-size:1.3rem}
+.nl{padding:.5rem .95rem;font-weight:600;display:block;color:var(--fg);transition:.2s}
+.ico-wrap{width:58px;height:58px;display:grid;place-items:center;margin-bottom:1rem}
+.ico{font-size:1.7rem;color:var(--acc)}
+.field{width:100%;padding:.9rem 1.1rem;border:0;outline:0;font:inherit;color:inherit;margin-bottom:1rem;display:block}
+.field:focus-visible,.btn-x:focus-visible,.nl:focus-visible,.soc:focus-visible{outline:3px solid var(--acc2);outline-offset:2px}
+.num{font-family:var(--hfont);font-size:2.4rem;color:var(--acc);line-height:1}
+.page{animation:fade .45s ease}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.soc{width:42px;height:42px;display:grid;place-items:center;font-size:1.1rem;transition:.2s}
+.footer-x{padding:3.5rem 0 2rem;margin-top:0}
+.footer-x a:hover{opacity:.7}
+@media(max-width:991px){.band{background-attachment:scroll}.sec{padding:60px 0}.nav-x .navbar-collapse{padding:1rem .5rem}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}}
+
+body::before{content:"";position:fixed;inset:0;z-index:-1;opacity:.65;
+background:radial-gradient(620px 440px at 8% 8%,var(--acc),transparent 62%),radial-gradient(720px 520px at 95% 35%,var(--acc2),transparent 62%),radial-gradient(660px 520px at 35% 100%,var(--acc3),transparent 62%)}
+.glass,.card-x,.nav-x,.field,.soc,.btn-o,.frame,.hero-box{background:rgba(255,255,255,.1);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.26);box-shadow:0 10px 40px rgba(0,0,0,.22)}
+.card-x{border-radius:var(--r);padding:1.7rem;height:100%;transition:.3s}.card-x:hover{background:rgba(255,255,255,.17)}
+.hero-box{border-radius:var(--r);padding:2.2rem}
+.nav-x{top:12px;left:12px;right:12px;border-radius:999px;padding:.55rem 1rem}
+.nl:hover,.nl.active{background:rgba(255,255,255,.2);border-radius:999px}
+.btn-x{display:inline-block;background:linear-gradient(135deg,var(--acc),var(--acc2));color:#fff;border:0;border-radius:999px;padding:.85rem 1.8rem;font-weight:600;box-shadow:0 8px 24px rgba(0,0,0,.3);transition:.25s}
+.btn-x:hover{transform:translateY(-2px);color:#fff}
+.btn-o{display:inline-block;color:#fff;border-radius:999px;padding:.85rem 1.8rem;font-weight:600}
+.frame{border-radius:var(--r);padding:10px}.frame img{border-radius:calc(var(--r) - 8px)}
+.field{border-radius:16px;color:#fff}.field::placeholder{color:rgba(255,255,255,.65)}option{color:#111}
+.soc{border-radius:50%;color:#fff}.soc:hover{background:var(--acc)}
+.ico-wrap{border-radius:18px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3)}.ico{color:#fff}
+.footer-x{background:rgba(0,0,0,.28);border-top:1px solid rgba(255,255,255,.2)}
+.eyebrow{color:var(--acc2)}
+@media(max-width:991px){.nav-x{border-radius:26px}}
+
+</style></head>
+<body>
+<nav class="navbar navbar-expand-lg nav-x fixed-top"><div class="container">
+<a class="navbar-brand brand d-flex align-items-center gap-2 fw-bold" href="#niveles"><i class="bi bi-mortarboard-fill"></i> Aurora University</a>
+<button class="toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú"><i class="bi bi-list"></i></button>
+<div class="collapse navbar-collapse" id="menu"><ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1"><li class="nav-item"><a class="nl" href="#niveles">Niveles</a></li><li class="nav-item"><a class="nl" href="#nosotros">Nosotros</a></li><li class="nav-item"><a class="nl" href="#programas">Programas</a></li><li class="nav-item"><a class="nl" href="#galeria">Galería</a></li><li class="nav-item"><a class="nl" href="#contacto">Contacto</a></li></ul>
+<a href="#contacto" class="btn-x ms-lg-3 mt-3 mt-lg-0 text-center">Inscripciones</a></div></div></nav>
+<header class="hero-bg on-img" style="background-image:linear-gradient(rgba(10,15,36,.45),rgba(10,15,36,.8)),url(https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1800&q=70);padding:170px 0 110px"><div class="container">
+<div class="hero-box" style="max-width:700px"><span class="eyebrow">Educación superior</span><h1 class="h-hero">Diseña tu futuro profesional</h1><p class="lead-x ">Carreras, posgrados y educación continua en un campus moderno, conectado con el mundo.</p><div class="d-flex flex-wrap gap-3 "><a href="#contacto" class="btn-x">Quiero inscribirme</a><a href="#niveles" class="btn-o">Ver carreras</a></div></div></div></header>
+<section class="sec-sm"><div class="container"><div class="grid grid-cols-2 md:grid-cols-4 gap-5"><div class="card-x text-center"><div class="num">+25</div><p class="mb-0 mt-1">Años de trayectoria</p></div><div class="card-x text-center"><div class="num">12.000</div><p class="mb-0 mt-1">Estudiantes</p></div><div class="card-x text-center"><div class="num">40</div><p class="mb-0 mt-1">Programas</p></div><div class="card-x text-center"><div class="num">95%</div><p class="mb-0 mt-1">Empleabilidad</p></div></div></div></section>
+<section class="sec" id="niveles"><div class="container"><div class="text-center mx-auto mb-10" style="max-width:640px"><span class="eyebrow">Oferta académica</span><h2 class="h-sec">Un camino para cada etapa</h2><p>Programas diseñados según la edad y los intereses de nuestros estudiantes.</p></div><div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"><div class="card-x"><div class="ico-wrap"><i class="bi bi-book ico"></i></div><h3 class="mb-2" style="font-size:1.35rem">Pregrado</h3><p class="mb-0">Carreras profesionales con prácticas y proyectos reales.</p></div><div class="card-x"><div class="ico-wrap"><i class="bi bi-mortarboard ico"></i></div><h3 class="mb-2" style="font-size:1.35rem">Posgrado</h3><p class="mb-0">Maestrías y especializaciones flexibles.</p></div><div class="card-x"><div class="ico-wrap"><i class="bi bi-laptop ico"></i></div><h3 class="mb-2" style="font-size:1.35rem">Educación continua</h3><p class="mb-0">Cursos cortos, diplomados y formación en línea.</p></div></div></div></section>
+<section class="sec" id="nosotros"><div class="container"><div class="grid md:grid-cols-2 gap-10 items-center"><div class="frame"><img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1000&q=70" alt="Imagen educativa" loading="lazy" class="w-full" style="height:400px;object-fit:cover" onerror="this.onerror=null;this.src='https://picsum.photos/seed/escuela/900/600'"></div><div><span class="eyebrow">Quiénes somos</span><h2 class="h-sec">Aprender con propósito</h2><p>Somos una comunidad educativa con más de dos décadas de experiencia. Creemos que aprender es un viaje compartido entre estudiantes, docentes y familias.</p><ul class="list-unstyled mb-4"><li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color:var(--acc)"></i>Grupos reducidos y atención personalizada</li><li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color:var(--acc)"></i>Proyectos que conectan con la vida real</li><li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color:var(--acc)"></i>Acompañamiento a familias en cada etapa</li></ul></div></div></div></section>
+<section class="band on-img" style="background-image:linear-gradient(rgba(10,15,36,.45),rgba(10,15,36,.8)),url(https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1800&q=70)"><div class="container text-center" style="max-width:760px">
+<h2 class="h-sec">Visita nuestro campus</h2><p class="lead-x mx-auto">Agenda un recorrido, conoce a los docentes y descubre cómo se vive un día con nosotros.</p><a href="#contacto" class="btn-x mt-2">Agendar visita</a></div></section>
+<section class="sec" id="programas"><div class="container"><div class="text-center mx-auto mb-10" style="max-width:640px"><span class="eyebrow">Por qué elegirnos</span><h2 class="h-sec">Todo lo que necesitas para crecer</h2></div><div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"><div class="card-x"><div class="ico-wrap"><i class="bi bi-person-workspace ico"></i></div><h3 class="mb-2" style="font-size:1.35rem">Docentes certificados</h3><p class="mb-0">Equipo con formación continua y vocación de enseñar.</p></div><div class="card-x"><div class="ico-wrap"><i class="bi bi-eyedropper ico"></i></div><h3 class="mb-2" style="font-size:1.35rem">Laboratorios</h3><p class="mb-0">Espacios equipados para experimentar y descubrir.</p></div><div class="card-x"><div class="ico-wrap"><i class="bi bi-book ico"></i></div><h3 class="mb-2" style="font-size:1.35rem">Biblioteca</h3><p class="mb-0">Miles de títulos y salas de estudio silenciosas.</p></div><div class="card-x"><div class="ico-wrap"><i class="bi bi-heart-pulse ico"></i></div><h3 class="mb-2" style="font-size:1.35rem">Bienestar</h3><p class="mb-0">Acompañamiento psicológico y vida saludable.</p></div><div class="card-x"><div class="ico-wrap"><i class="bi bi-trophy ico"></i></div><h3 class="mb-2" style="font-size:1.35rem">Deportes y arte</h3><p class="mb-0">Talleres culturales, deportivos y de liderazgo.</p></div><div class="card-x"><div class="ico-wrap"><i class="bi bi-laptop ico"></i></div><h3 class="mb-2" style="font-size:1.35rem">Tecnología</h3><p class="mb-0">Aulas conectadas y plataforma virtual de apoyo.</p></div></div></div></section>
+<section class="sec" id="galeria"><div class="container"><div class="text-center mx-auto mb-10" style="max-width:640px"><span class="eyebrow">Vida escolar</span><h2 class="h-sec">Momentos que nos inspiran</h2></div><div class="grid grid-cols-2 md:grid-cols-4 gap-4"><div class="frame"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=70" alt="Imagen educativa" loading="lazy" class="w-full" style="height:230px;object-fit:cover" onerror="this.onerror=null;this.src='https://picsum.photos/seed/escuela/900/600'"></div><div class="frame"><img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=600&q=70" alt="Imagen educativa" loading="lazy" class="w-full" style="height:230px;object-fit:cover" onerror="this.onerror=null;this.src='https://picsum.photos/seed/escuela/900/600'"></div><div class="frame"><img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=600&q=70" alt="Imagen educativa" loading="lazy" class="w-full" style="height:230px;object-fit:cover" onerror="this.onerror=null;this.src='https://picsum.photos/seed/escuela/900/600'"></div><div class="frame"><img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=600&q=70" alt="Imagen educativa" loading="lazy" class="w-full" style="height:230px;object-fit:cover" onerror="this.onerror=null;this.src='https://picsum.photos/seed/escuela/900/600'"></div></div></div></section>
+<section class="sec"><div class="container"><div class="text-center mx-auto mb-10" style="max-width:640px"><span class="eyebrow">Testimonios</span><h2 class="h-sec">Lo que dice nuestra comunidad</h2></div><div class="grid md:grid-cols-3 gap-6"><div class="card-x"><i class="bi bi-quote ico" style="font-size:2.4rem"></i><p>Mis hijos aprenden felices y el acompañamiento es excelente.</p><div class="fw-bold">María Fernanda</div><small class="muted" style="opacity:.8">Madre de familia</small></div><div class="card-x"><i class="bi bi-quote ico" style="font-size:2.4rem"></i><p>Aquí encontré las bases y las amistades que hoy me acompañan.</p><div class="fw-bold">Carlos Ramírez</div><small class="muted" style="opacity:.8">Egresado</small></div><div class="card-x"><i class="bi bi-quote ico" style="font-size:2.4rem"></i><p>Los profesores nos motivan a preguntar y a ir más allá.</p><div class="fw-bold">Laura Gómez</div><small class="muted" style="opacity:.8">Estudiante</small></div></div></div></section>
+<section class="sec" id="contacto"><div class="container"><div class="grid md:grid-cols-2 gap-10 items-start"><div><span class="eyebrow">Contacto</span><h2 class="h-sec">Hablemos de tu futuro</h2><p>Déjanos tus datos y un asesor te responderá en menos de 24 horas.</p><p class="mb-1"><i class="bi bi-geo-alt me-2"></i>Calle 123 #45-67, Ciudad</p><p class="mb-1"><i class="bi bi-telephone me-2"></i>+00 123 456 7890</p><p class="mb-4"><i class="bi bi-envelope me-2"></i>info@ejemplo.edu</p><div class="d-flex flex-wrap gap-2"><a href="#" class="soc" aria-label="Facebook"><i class="bi bi-facebook"></i></a><a href="#" class="soc" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a href="#" class="soc" aria-label="X"><i class="bi bi-twitter-x"></i></a><a href="#" class="soc" aria-label="YouTube"><i class="bi bi-youtube"></i></a><a href="#" class="soc" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a></div></div><form class="card-x" onsubmit="event.preventDefault();this.reset();alert('¡Gracias! Te contactaremos muy pronto.')">
+<h3 class="mb-3" style="font-size:1.5rem">Solicita información</h3>
+<input class="field" placeholder="Nombre completo" required><input class="field" type="email" placeholder="Correo electrónico" required>
+<select class="field"><option>Nivel de interés</option><option>Pregrado</option><option>Posgrado</option><option>Educación continua</option><option>Intercambios</option></select>
+<textarea class="field" rows="4" placeholder="Escribe tu mensaje"></textarea>
+<button class="btn-x w-100" type="submit">Enviar solicitud</button></form></div></div></section>
+<footer class="footer-x"><div class="container">
+<div class="grid md:grid-cols-3 gap-8">
+<div><div class="brand fw-bold mb-2"><i class="bi bi-mortarboard-fill"></i> Aurora University</div><p>Educación superior. Formamos personas curiosas, críticas y comprometidas con su comunidad.</p></div>
+<div><h5 class="mb-3">Enlaces</h5><a href="#niveles" class="me-3 d-inline-block">Niveles</a><a href="#nosotros" class="me-3 d-inline-block">Nosotros</a><a href="#programas" class="me-3 d-inline-block">Programas</a><a href="#galeria" class="me-3 d-inline-block">Galería</a><a href="#contacto" class="me-3 d-inline-block">Contacto</a></div>
+<div><h5 class="mb-3">Síguenos</h5><div class="d-flex flex-wrap gap-2"><a href="#" class="soc" aria-label="Facebook"><i class="bi bi-facebook"></i></a><a href="#" class="soc" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a href="#" class="soc" aria-label="X"><i class="bi bi-twitter-x"></i></a><a href="#" class="soc" aria-label="YouTube"><i class="bi bi-youtube"></i></a><a href="#" class="soc" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a></div></div></div>
+<hr class="my-4" style="opacity:.25"><p class="mb-0 small">© 2026 Aurora University. Todos los derechos reservados. Texto e imágenes de ejemplo.</p></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body></html>

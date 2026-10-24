@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pequeños Genios | Jardín infantil</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={corePlugins:{preflight:false}}</script>
+<style>
+:root{--bg:#fff4e0;--bg2:#ffb4cf;--fg:#4a2c5a;--muted:#6b5578;--acc:#ff6b9d;--on-acc:#ffffff;--acc2:#4cc3ff;--acc3:#ffc933;--card:#ffffff;--c1:#ffd6e7;--c2:#d4ecff;--c3:#fff1b8;--hfont:"Fredoka",sans-serif;--bfont:"Nunito",sans-serif}
+
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:var(--bfont);background:var(--bg);color:var(--fg);overflow-x:hidden;line-height:1.65}
+h1,h2,h3,h4,h5,.brand{font-family:var(--hfont);color:inherit;line-height:1.12;margin:0}
+a{text-decoration:none;color:inherit}p{color:var(--muted);margin:0 0 1rem}
+img{max-width:100%;display:block}
+.sec{padding:84px 0}.sec-sm{padding:40px 0}
+.h-hero{font-size:clamp(2.3rem,5.6vw,4.3rem);margin:1rem 0 1.2rem}
+.h-sec{font-size:clamp(1.8rem,3.6vw,2.8rem);margin:.5rem 0 1rem}
+.eyebrow{font-size:.9rem;font-weight:700;color:var(--acc)}
+.lead-x{font-size:1.15rem;max-width:56ch}
+.hero-bg,.band{background-size:cover;background-position:center;background-color:var(--bg2,#222)}
+.band{background-attachment:fixed;padding:110px 0}
+.on-img,.on-img p,.on-img h1,.on-img h2,.on-img .eyebrow{color:#fff}
+.on-img p{opacity:.92}
+.toggler{border:0;font-size:2rem;line-height:1;background:transparent;color:var(--fg);padding:.1rem .5rem}
+.nav-x{--bs-navbar-color:var(--fg);--bs-navbar-brand-color:var(--fg);--bs-navbar-brand-hover-color:var(--fg)}
+.brand{font-size:1.3rem}
+.nl{padding:.5rem .95rem;font-weight:600;display:block;color:var(--fg);transition:.2s}
+.ico-wrap{width:58px;height:58px;display:grid;place-items:center;margin-bottom:1rem}
+.ico{font-size:1.7rem;color:var(--acc)}
+.field{width:100%;padding:.9rem 1.1rem;border:0;outline:0;font:inherit;color:inherit;margin-bottom:1rem;display:block}
+.field:focus-visible,.btn-x:focus-visible,.nl:focus-visible,.soc:focus-visible{outline:3px solid var(--acc2);outline-offset:2px}
+.num{font-family:var(--hfont);font-size:2.4rem;color:var(--acc);line-height:1}
+.page{animation:fade .45s ease}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.soc{width:42px;height:42px;display:grid;place-items:center;font-size:1.1rem;transition:.2s}
+.footer-x{padding:3.5rem 0 2rem;margin-top:0}
+.footer-x a:hover{opacity:.7}
+@media(max-width:991px){.band{background-attachment:scroll}.sec{padding:60px 0}.nav-x .navbar-collapse{padding:1rem .5rem}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}}
+
+.glass,.card-x,.frame,.hero-box{background:var(--card);border-radius:32px;padding:1.7rem;height:100%;
+box-shadow:inset -8px -8px 14px rgba(0,0,0,.07),inset 8px 8px 14px rgba(255,255,255,.85),12px 16px 28px rgba(0,0,0,.13)}
+.card-x:nth-child(3n+1){background:var(--c1)}.card-x:nth-child(3n+2){background:var(--c2)}.card-x:nth-child(3n){background:var(--c3)}
+.frame{padding:10px;height:auto}.frame img{border-radius:24px}
+.hero-box{box-shadow:none;background:none;padding:0}
+.nav-x{top:12px;left:12px;right:12px;border-radius:30px;background:var(--card);padding:.5rem 1rem;
+box-shadow:inset -5px -5px 10px rgba(0,0,0,.06),inset 5px 5px 10px rgba(255,255,255,.9),8px 12px 24px rgba(0,0,0,.12)}
+.btn-x,.btn-o{display:inline-block;border:0;border-radius:999px;padding:.9rem 1.9rem;font-weight:800;transition:.2s;
+box-shadow:inset -5px -5px 10px rgba(0,0,0,.16),inset 5px 5px 10px rgba(255,255,255,.5),8px 10px 18px rgba(0,0,0,.16)}
+.btn-x{background:var(--acc);color:var(--on-acc)}.btn-o{background:#fff;color:var(--fg)}
+.btn-x:hover,.btn-o:hover{transform:translateY(-3px) scale(1.03);color:var(--on-acc)}.btn-o:hover{color:var(--fg)}
+.field{background:#fff;border-radius:20px;box-shadow:inset 4px 4px 9px rgba(0,0,0,.12),inset -4px -4px 9px #fff}
+.soc{border-radius:50%;background:var(--acc);color:#fff;box-shadow:inset -3px -3px 6px rgba(0,0,0,.2),inset 3px 3px 6px rgba(255,255,255,.4),4px 6px 12px rgba(0,0,0,.15)}
+.soc:hover{transform:translateY(-3px)}
+.nl{border-radius:999px}.nl:hover,.nl.active{background:var(--acc);color:var(--on-acc)}
+.ico-wrap{background:var(--acc);border-radius:55% 45% 52% 48%;box-shadow:inset -4px -4px 8px rgba(0,0,0,.2),inset 4px 4px 8px rgba(255,255,255,.45)}.ico{color:#fff}
+.footer-x{background:var(--card);border-radius:48px 48px 0 0;box-shadow:0 -10px 30px rgba(0,0,0,.08)}
+.on-img .btn-o{color:var(--fg)}.on-img .btn-x:hover{color:var(--on-acc)}
+.h-hero,.h-sec{letter-spacing:.01em}
+
+</style></head>
+<body>
+<nav class="navbar navbar-expand-lg nav-x fixed-top"><div class="container">
+<a class="navbar-brand brand d-flex align-items-center gap-2 fw-bold" href="#niveles"><i class="bi bi-mortarboard-fill"></i> Pequeños Genios</a>
+<button class="toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú"><i class="bi bi-list"></i></button>
+<div class="collapse navbar-collapse" id="menu"><ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1"><li class="nav-item"><a class="nl" href="#niveles">Niveles</a></li><li class="nav-item"><a class="nl" href="#nosotros">Nosotros</a></li><li class="nav-item"><a class="nl" href="#programas">Programas</a></li><li class="nav-item"><a class="nl" href="#galeria">Galería</a></li><li class="nav-item"><a class="nl" href="#contacto">Contacto</a></li></ul>
+<a href="#contacto" class="btn-x ms-lg-3 mt-3 mt-lg-0 text-center">Inscripciones</a></div></div></nav>
+<header class="text-center" style="padding:150px 0 70px"><div class="container"><div class="mx-auto hero-box" style="max-width:780px"><span class="eyebrow">Jardín infantil</span><h1 class="h-hero">Donde jugar es la mejor forma de aprender</h1><p class="lead-x mx-auto">Un jardín cálido y colorido para niños de 1 a 5 años, con educadoras amorosas y mucho espacio para imaginar.</p><div class="d-flex flex-wrap gap-3 justify-content-center"><a href="#contacto" class="btn-x">Conoce el jardín</a><a href="#niveles" class="btn-o">Nuestras salas</a></div></div>
+<div class="frame mt-12"><img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1600&q=70" alt="Imagen educativa" loading="lazy" class="w-full" style="height:380px;object-fit:cover" onerror="this.onerror=null;this.src='https://picsum.photos/seed/escuela/900/600'"></div></div></header>
+<section class="sec-sm"><div class="container"><div class="grid grid-cols-2 md:grid-cols-4 gap-5"><div class="card-x text-center"><div class="num">15</div><p class="mb-0 mt-1">Años cuidando</p></div><div class="card-x text-center"><div class="num">120</div><p class="mb-0 mt-1">Pequeños genios</p></div><div class="card-x text-center"><div class="num">12</div><p class="mb-0 mt-1">Educadoras</p></div><div class="card-x text-center"><div class="num">5</div><p class="mb-0 mt-1">Salas temáticas</p></div></div></div></section>
+<section class="sec" id="niveles"><div class="container"><div class="text-center mx-auto mb-10" style="max-width:640px"><span class="eyebrow">Oferta académica</span><h2 class="h-sec">Un camino para cada etapa</h2><p>Programas diseñados según la edad y los intereses de nuestros estudiantes.</p></div><div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"><div class="card-x"><div class="ico-wrap"><i class="bi bi-emoji-heart-eyes ico"></i></div><h3 class="mb-2" style="font-size:1.35rem">Sala cuna</h3><p class="mb-0">Cuidado tierno para bebés de 1 año.</p></div><div class="card-x"><div class="ico-wrap"><i class="bi bi-puzzle ico"></i></div><h3 class="mb-2" style="font-size:1.35rem">Maternal</h3><p class="mb-0">Exploración sensorial y primeros juegos.</p></div><div class="card-x"><div class="ico-wrap"><i class="bi bi-palette ico"></i></div><h3 class="mb-2" style="font-size:1.35rem">Pre-jardín</h3><p class="mb-0">Arte, música y lenguaje en acción.</p></div></div></div></section>
+<section class="sec" id="nosotros"><div class="container"><div class="grid md:grid-cols-2 gap-10 items-center"><div class="frame"><img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=1000&q=70" alt="Imagen educativa" loading="lazy" class="w-full" style="height:400px;object-fit:cover" onerror="this.onerror=null;this.src='https://picsum.photos/seed/escuela/900/600'"></div><div><span class="eyebrow">Quiénes somos</span><h2 class="h-sec">Aprender con propósito</h2><p>Somos una comunidad educativa con más de dos décadas de experiencia. Creemos que aprender es un viaje compartido entre estudiantes, docentes y familias.</p><ul class="list-unstyled mb-4"><li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color:var(--acc)"></i>Grupos reducidos y atención personalizada</li><li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color:var(--acc)"></i>Proyectos que conectan con la vida real</li><li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color:var(--acc)"></i>Acompañamiento a familias en cada etapa</li></ul></div></div></div></section>
+<section class="band on-img" style="background-image:linear-gradient(rgba(74,44,90,.35),rgba(74,44,90,.65)),url(https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1800&q=70)"><div class="container text-center" style="max-width:760px">
+<h2 class="h-sec">Visita nuestro campus</h2><p class="lead-x mx-auto">Agenda un recorrido, conoce a los docentes y descubre cómo se vive un día con nosotros.</p><a href="#contacto" class="btn-x mt-2">Agendar visita</a></div></section>
+<section class="sec" id="programas"><div class="container"><div class="text-center mx-auto mb-10" style="max-width:640px"><span class="eyebrow">Por qué elegirnos</span><h2 class="h-sec">Todo lo que necesitas para crecer</h2></div><div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"><div class="card-x"><div class="ico-wrap"><i class="bi bi-person-workspace ico"></i></div><h3 class="mb-2" style="font-size:1.35rem">Docentes certificados</h3><p class="mb-0">Equipo con formación continua y vocación de enseñar.</p></div><div class="card-x"><div class="ico-wrap"><i class="bi bi-eyedropper ico"></i></div><h3 class="mb-2" style="font-size:1.35rem">Laboratorios</h3><p class="mb-0">Espacios equipados para experimentar y descubrir.</p></div><div class="card-x"><div class="ico-wrap"><i class="bi bi-book ico"></i></div><h3 class="mb-2" style="font-size:1.35rem">Biblioteca</h3><p class="mb-0">Miles de títulos y salas de estudio silenciosas.</p></div><div class="card-x"><div class="ico-wrap"><i class="bi bi-heart-pulse ico"></i></div><h3 class="mb-2" style="font-size:1.35rem">Bienestar</h3><p class="mb-0">Acompañamiento psicológico y vida saludable.</p></div><div class="card-x"><div class="ico-wrap"><i class="bi bi-trophy ico"></i></div><h3 class="mb-2" style="font-size:1.35rem">Deportes y arte</h3><p class="mb-0">Talleres culturales, deportivos y de liderazgo.</p></div><div class="card-x"><div class="ico-wrap"><i class="bi bi-laptop ico"></i></div><h3 class="mb-2" style="font-size:1.35rem">Tecnología</h3><p class="mb-0">Aulas conectadas y plataforma virtual de apoyo.</p></div></div></div></section>
+<section class="sec" id="galeria"><div class="container"><div class="text-center mx-auto mb-10" style="max-width:640px"><span class="eyebrow">Vida escolar</span><h2 class="h-sec">Momentos que nos inspiran</h2></div><div class="grid grid-cols-2 md:grid-cols-4 gap-4"><div class="frame"><img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=600&q=70" alt="Imagen educativa" loading="lazy" class="w-full" style="height:230px;object-fit:cover" onerror="this.onerror=null;this.src='https://picsum.photos/seed/escuela/900/600'"></div><div class="frame"><img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=600&q=70" alt="Imagen educativa" loading="lazy" class="w-full" style="height:230px;object-fit:cover" onerror="this.onerror=null;this.src='https://picsum.photos/seed/escuela/900/600'"></div><div class="frame"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=70" alt="Imagen educativa" loading="lazy" class="w-full" style="height:230px;object-fit:cover" onerror="this.onerror=null;this.src='https://picsum.photos/seed/escuela/900/600'"></div><div class="frame"><img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=600&q=70" alt="Imagen educativa" loading="lazy" class="w-full" style="height:230px;object-fit:cover" onerror="this.onerror=null;this.src='https://picsum.photos/seed/escuela/900/600'"></div></div></div></section>
+<section class="sec"><div class="container"><div class="text-center mx-auto mb-10" style="max-width:640px"><span class="eyebrow">Testimonios</span><h2 class="h-sec">Lo que dice nuestra comunidad</h2></div><div class="grid md:grid-cols-3 gap-6"><div class="card-x"><i class="bi bi-quote ico" style="font-size:2.4rem"></i><p>Mis hijos aprenden felices y el acompañamiento es excelente.</p><div class="fw-bold">María Fernanda</div><small class="muted" style="opacity:.8">Madre de familia</small></div><div class="card-x"><i class="bi bi-quote ico" style="font-size:2.4rem"></i><p>Aquí encontré las bases y las amistades que hoy me acompañan.</p><div class="fw-bold">Carlos Ramírez</div><small class="muted" style="opacity:.8">Egresado</small></div><div class="card-x"><i class="bi bi-quote ico" style="font-size:2.4rem"></i><p>Los profesores nos motivan a preguntar y a ir más allá.</p><div class="fw-bold">Laura Gómez</div><small class="muted" style="opacity:.8">Estudiante</small></div></div></div></section>
+<section class="sec" id="contacto"><div class="container"><div class="grid md:grid-cols-2 gap-10 items-start"><div><span class="eyebrow">Contacto</span><h2 class="h-sec">Hablemos de tu futuro</h2><p>Déjanos tus datos y un asesor te responderá en menos de 24 horas.</p><p class="mb-1"><i class="bi bi-geo-alt me-2"></i>Calle 123 #45-67, Ciudad</p><p class="mb-1"><i class="bi bi-telephone me-2"></i>+00 123 456 7890</p><p class="mb-4"><i class="bi bi-envelope me-2"></i>info@ejemplo.edu</p><div class="d-flex flex-wrap gap-2"><a href="#" class="soc" aria-label="Facebook"><i class="bi bi-facebook"></i></a><a href="#" class="soc" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a href="#" class="soc" aria-label="X"><i class="bi bi-twitter-x"></i></a><a href="#" class="soc" aria-label="YouTube"><i class="bi bi-youtube"></i></a><a href="#" class="soc" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a></div></div><form class="card-x" onsubmit="event.preventDefault();this.reset();alert('¡Gracias! Te contactaremos muy pronto.')">
+<h3 class="mb-3" style="font-size:1.5rem">Solicita información</h3>
+<input class="field" placeholder="Nombre completo" required><input class="field" type="email" placeholder="Correo electrónico" required>
+<select class="field"><option>Nivel de interés</option><option>Sala cuna</option><option>Maternal</option><option>Pre-jardín</option><option>Transición</option></select>
+<textarea class="field" rows="4" placeholder="Escribe tu mensaje"></textarea>
+<button class="btn-x w-100" type="submit">Enviar solicitud</button></form></div></div></section>
+<footer class="footer-x"><div class="container">
+<div class="grid md:grid-cols-3 gap-8">
+<div><div class="brand fw-bold mb-2"><i class="bi bi-mortarboard-fill"></i> Pequeños Genios</div><p>Jardín infantil. Formamos personas curiosas, críticas y comprometidas con su comunidad.</p></div>
+<div><h5 class="mb-3">Enlaces</h5><a href="#niveles" class="me-3 d-inline-block">Niveles</a><a href="#nosotros" class="me-3 d-inline-block">Nosotros</a><a href="#programas" class="me-3 d-inline-block">Programas</a><a href="#galeria" class="me-3 d-inline-block">Galería</a><a href="#contacto" class="me-3 d-inline-block">Contacto</a></div>
+<div><h5 class="mb-3">Síguenos</h5><div class="d-flex flex-wrap gap-2"><a href="#" class="soc" aria-label="Facebook"><i class="bi bi-facebook"></i></a><a href="#" class="soc" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a href="#" class="soc" aria-label="X"><i class="bi bi-twitter-x"></i></a><a href="#" class="soc" aria-label="YouTube"><i class="bi bi-youtube"></i></a><a href="#" class="soc" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a></div></div></div>
+<hr class="my-4" style="opacity:.25"><p class="mb-0 small">© 2026 Pequeños Genios. Todos los derechos reservados. Texto e imágenes de ejemplo.</p></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body></html>
